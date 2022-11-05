@@ -1,0 +1,29 @@
+.next {
+    margin: 1em;  
+    cursor: pointer;
+    border-radius: 360px;
+}
+    
+svg.next:hover {
+    fill: #3da5d9;
+    /* animation: wobble 0.8s ease-in-out; */
+    
+}
+
+@keyframes wobble {
+    0% {      
+        transform: scale(2);
+    }
+    25% {
+        transform: rotate(-20deg);      
+    }
+    50% {
+        transform: scale(2);
+    }
+    75% {
+        transform: rotate(20deg);
+    }
+    100% {
+        transform: scale(2);
+    }
+}

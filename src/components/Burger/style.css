@@ -1,0 +1,37 @@
+.burger div{
+    background-color: white;
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.burger {
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.burger:hover div {
+    background-color: #00b4d8;
+    transform: rotate(180deg);
+}
+
+.burger:hover + #name-head {
+    color: #00b4d8;
+}
+
+
+.toggle #line1 {
+    transform: rotate(-45deg) translate(-5px,6px);
+    background-color: #00b4d8;
+}
+
+.toggle #line2 {
+    opacity: 0;
+}
+
+.toggle #line3 {
+    transform: rotate(+45deg) translate(-5px,-6px);
+    background-color: #00b4d8;
+}

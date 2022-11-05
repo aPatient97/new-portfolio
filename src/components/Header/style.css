@@ -1,0 +1,35 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    background-color: #000;
+    background-color: #28282B;
+    background-color: #005f73;
+    background-color: #0a9396;
+    background-color: #001c55;
+    position: sticky;
+    top: 0;
+    height: 7vh;
+  }
+  
+  #name-head {
+    font-size: 1em;
+    transition: all 0.5s ease-in-out;
+    animation: strobe 2.5s infinite ease-in-out;
+    cursor: pointer;
+  }
+
+  @keyframes strobe {
+    0% {
+      color: #fff;
+    }
+    50% {
+      color: #00b4d8;
+    }
+
+    100% {
+      color: #fff;
+    }
+  }
+

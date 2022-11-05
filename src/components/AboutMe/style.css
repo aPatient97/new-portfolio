@@ -1,0 +1,24 @@
+.about {
+    display: grid;
+}
+
+.about p {
+    padding: 1em;
+}
+.about h2 {
+    padding-top: 1em;
+}
+
+@media only screen and (min-width: 1150px) {
+    div.about {
+       margin-left: 20em;
+       margin-right: 20em;
+        
+    }
+
+   
+}
+
+a#fp {
+    color: #0a9396;
+}

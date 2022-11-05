@@ -1,0 +1,25 @@
+.icons {
+    display: flex; 
+    justify-content: space-evenly;
+    align-items: center; 
+    width: 12%;
+}
+
+@media screen and (max-width: 760px) {
+    .icons {
+        width: 25%;
+    }
+}
+
+.icons svg {
+    cursor: pointer;
+}
+
+.icons svg:hover {
+    transform: scale(1.2);
+    fill: whitesmoke;
+}
+
+.icons svg#linked-in:hover {
+    fill: #00b4d8;
+}

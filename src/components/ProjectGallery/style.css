@@ -1,0 +1,50 @@
+.project-gallery {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1em;
+  width: 85vw;
+}
+
+@media only screen and (max-width: 760px) {
+  .column p {
+    padding-bottom: 0px;
+  }
+
+  img.image {
+    object-position: top;
+  }
+
+  div.center-projects {
+    margin-top: 5em;
+  }
+
+  svg.prev, svg.next {
+    margin-top: -15em;
+}
+
+}
+
+/* svg.prev, svg.next {
+  margin-top: -12em;
+} */
+
+
+/* .column {
+  display: flex;
+  flex-direction: column;
+} */
+
+.project-gallery h2 {
+  padding-top: 0px;
+}
+
+.project-gallery p {
+  padding-bottom: 2em;
+}
+
+.center-projects {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

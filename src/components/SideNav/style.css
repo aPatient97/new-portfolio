@@ -1,0 +1,118 @@
+nav.side-nav {
+    /* background-color: black;
+    background-color: #28282B;
+    background-color: #005f73;
+    background-color: #0a9396; */
+    background-color: #001c55;
+    position: fixed;
+    height: 93vh;
+    width: 15vw;
+    left: 0;
+    bottom: 0;
+    overflow-y: hidden;
+    padding-top: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    transform: translateY(100%);
+    transition: all 0.5s ease-in-out;
+    z-index: 10;
+}
+
+@media only screen and (min-width: 760px) {
+    nav.side-nav {
+        height: 93vh;
+    }
+
+    header {
+        height: 7vh;
+    }
+
+    /* .burger {
+        height: 7vh;
+    } */
+}
+
+.hover-underline {
+    display: inline-block;
+    position: relative;
+  }
+
+nav.side-nav p {
+    cursor: pointer;
+}
+  
+@media only screen and (max-width: 760px) {
+    nav.side-nav p {
+        writing-mode: vertical-lr;
+        transform: rotate(180deg);
+        margin: 1em;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+    }
+
+    p.hover-underline:after {
+        content: '';
+        position: absolute;
+        width: 2px;
+        transform: scaleY(0);
+        height: 100%;
+        bottom: 0;
+        right: 200px;
+        background-color: #90e0ef;
+        transform-origin: bottom left;
+        transform: rotateY('180');
+        transition: transform 0.3s ease-out;
+        writing-mode: vertical-lr;
+      }
+
+    .hover-underline:hover:after {
+    transform: scaleY(0.9);
+    transform-origin: bottom left;
+    }
+}
+
+.hover-underline:after {
+    content: '';
+    position: absolute;
+    width: 113%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #FFCC33;
+    background-color: #90e0ef;
+    transform-origin: bottom left;
+    transition: transform 0.3s ease-out;
+    writing-mode: vertical-lr;
+  }
+  
+  .hover-underline:hover:after {
+    transform: scaleX(0.9);
+    transform-origin: bottom left;
+  }
+
+nav.side-nav p:hover {
+    color: #00b4d8;
+}
+
+nav.side-nav p#contact {
+    margin-bottom: 10em;
+}
+
+nav.side-nav #projects {
+    margin: 1em;
+}
+
+.nav-active {
+    transform: translateY(0%) !important;
+}
+
+a > p#contact {
+    color: white;
+}
+
+a > p#contact:hover {
+    color: #00b4d8;
+}

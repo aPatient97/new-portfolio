@@ -1,0 +1,75 @@
+div#welcome {
+    padding-top: 5em;
+    padding-left: 15em;
+}
+
+@media only screen and (max-width:760px) {
+    div#welcome {
+        padding: 5em 3em 0em 3em;
+    }
+
+    button.hire-me {
+        padding: 0em;
+    }
+}
+
+div#welcome p {
+    padding: 1em;
+}
+
+div#welcome h1 {
+    padding: 0em 0.5em;
+    margin: 0em;
+}
+
+button.hire-me {
+    padding: 1.5em 3em;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    background-color: #00b4d8;
+    text-transform: uppercase;
+    transition: 0.7s ease-in-out;
+    margin: 1em;
+    cursor: pointer;
+}
+div.end-it {
+    width: 20%;
+}
+
+button.hire-me:hover {
+    background-color: #3DA5D9;
+    background-color: #FEC601;
+    background-color: #EA7317;
+    transform: translateY(3px);
+    box-shadow: rgba(0, 0, 0, .15) 0 3px 9px 0;
+}
+
+div.magic-box {
+    width: 100%;
+    height: 93vh;
+}
+
+.trail {
+    width: 20px;
+    height: 20px;
+    border-radius: 30%;
+    border: 1px solid black;
+    position: fixed;
+    animation: come 1s linear forwards;
+    z-index: -1;
+}
+
+@keyframes come {
+    0% {
+        transform: scale(0);
+    }
+    10% {
+        transform: scale(1) translateY(0px) rotate(360deg);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0) translateY(50px);
+        opacity: 0;
+    }
+}

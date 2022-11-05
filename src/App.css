@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Dosis&family=Inter&family=Montserrat&family=Nanum+Gothic&family=Noto+Sans&family=Nunito&family=Nunito+Sans&family=Open+Sans&family=PT+Sans&family=Quicksand&display=swap');
+
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  /* background-color: #001233; */
+  /* background-color: #001219; */
+  background-color: #00072d;
+  color: white;
+}
+
+h2 {
+  font-weight: 400;
+  padding: 1em;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+h3 {
+  margin: 1em 0em;
+  font-weight: 400;
+}
+
+button {
+  cursor: pointer;
+}
+
+.center {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.removed {
+  opacity: 0;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  margin: 0em 1em;
+}
+
+@keyframes slideInFromBottom {
+  0% {
+      opacity: 0;
+  }
+
+  100% {
+      opacity: 1;
+  }
+}
+
+section.container {
+  position: relative;
+  width: 60vw;
+  height: 75vh;
+  animation: slideInFromBottom 0.7s ease-out;
+}
+
+img.image {
+  width: 100%;
+  height: auto;
+  opacity: 1;
+  object-fit: contain;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  cursor: pointer;
+}
+
+img.big {
+  width: 100%;
+  height: auto;
+  opacity: 1;
+  object-fit: contain;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  cursor: pointer;
+}
+
+div.middle {
+  position: absolute;
+  transition: .5s ease;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  cursor: pointer;
+  width: 60%;
+  padding: 1em;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width:760px) {
+  div.middle {
+    width: 100%;
+  }
+}
+.middle p {
+  margin-bottom: 1em;
+}
+
+section.container:hover .image {
+  opacity: 0.15;
+}
+
+section.container:hover .middle {
+  opacity: 1;
+}
+

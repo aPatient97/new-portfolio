@@ -1,0 +1,12 @@
+.prev {
+    cursor: pointer;
+    margin: 1em;
+}
+
+svg.prev:hover {
+    fill: #73bfb8;
+    /* animation: wobble 0.8s ease-in-out; */
+    width: 24px;
+    height: 24px;
+} 
+
