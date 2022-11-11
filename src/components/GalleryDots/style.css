@@ -1,0 +1,15 @@
+.dots {
+    display: flex; 
+   justify-content: center;
+}
+
+div.dot {
+    border-radius: 50%;
+    padding: 0.5em;
+    margin: 0.15em;
+    border: 1px solid white;
+}
+
+.current {
+    background: white;
+}

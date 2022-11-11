@@ -15,8 +15,6 @@ html {
 
 body {
   font-family: 'Quicksand', sans-serif;
-  /* background-color: #001233; */
-  /* background-color: #001219; */
   background-color: #00072d;
   color: white;
 }
@@ -70,7 +68,6 @@ button {
 section.container {
   position: relative;
   width: 60vw;
-  height: 75vh;
   animation: slideInFromBottom 0.7s ease-out;
 }
 
@@ -82,7 +79,9 @@ img.image {
   transition: .5s ease;
   backface-visibility: hidden;
   cursor: pointer;
+  max-height: 70vh;
 }
+
 
 img.big {
   width: 100%;
@@ -98,7 +97,7 @@ div.middle {
   position: absolute;
   transition: .5s ease;
   opacity: 0;
-  top: 50%;
+  top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -106,6 +105,7 @@ div.middle {
   width: 60%;
   padding: 1em;
   border-radius: 5px;
+  
 }
 
 @media only screen and (max-width:760px) {
@@ -125,3 +125,7 @@ section.container:hover .middle {
   opacity: 1;
 }
 
+.column {
+  display: grid;
+  
+}

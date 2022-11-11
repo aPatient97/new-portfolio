@@ -1,11 +1,17 @@
+@media only screen and (max-width: 760px) {
+    svg.next {
+        margin-left: 1em;
+    }
+}
+
 .next {
-    margin: 1em;  
+    margin-left: 5em;  
     cursor: pointer;
-    border-radius: 360px;
 }
     
 svg.next:hover {
-    fill: #3da5d9;
+    fill: #73bfb8;
+    
     /* animation: wobble 0.8s ease-in-out; */
     
 }

@@ -7,7 +7,7 @@ function MixerCard() {
     <>     
           <section className="container">
             <picture>
-              <source media="(min-width: 900px)" srcset="/images/mixer-large.webp" alt="Mixer website screenshot"/>
+              <source media="(min-width: 900px)" srcSet="/images/mixer-large.webp" alt="Mixer website screenshot"/>
               <source media="(min-width: 900px)" className='image' src="./images/mixer-large.jpg" alt="Mixer website screenshot" />
               <img className='image' src="./images/mixr.jpg" alt="Mixer website screenshot" />
             </picture>

@@ -11,67 +11,99 @@ import './style.css'
 function ProjectGallery() {
 
     const cardArray = ['Mixer', 'BFH', 'URL', 'Calc', 'Finca']
-
     const [count, setCount] = useState(0)
     const [card, setCard] = useState(cardArray[count])
-    console.log(count)
+    let last = cardArray.length -1
+    const dot = document.querySelector(`#d${count}`)
+    
+    
     if (count === 5) {
         setCount(0)
     }
     if (count < 0) {
-        setCount(4)
+        setCount(last)
     } 
 
    useEffect(() => {
+    // removeDot()
     changeCard()
+    fillDot()
    }, [count])
 
     const changeCard = () => {
-        setCard(cardArray[count])
-        console.log('changed to', cardArray[count])
+        setCard(cardArray[count])      
     }
     
     const handlePrev = e => {
-        setCount(count => count - 1)
-        console.log('previous! Count is: ', count)     
+        dot && dot.classList.remove('current')
+        setCount(count => count - 1)  
+        // dot.classList.remove('current')
+               
     }
 
-    const handleNext = e => {            
+    const handleNext = e => {     
+        dot && dot.classList.remove('current')       
         setCount(count => count + 1)
-        console.log('next! Count is:', count)     
+        // dot.classList.remove('current')
+        
     }
+
+    const handleDot = (count) => {
+        dot.classList.remove('current')
+        const newDot = document.querySelector(`#d${count}`)
+        newDot.classList.add('current')
+        console.log(count)
+        setCard(cardArray[count])
+        setCount(count)
+        
+        
+    }
+
+//  const removeDot = () => {
+//     dot && dot.classList.remove('current')
+//  }
+
+
+ const fillDot = () => {
+    dot && dot.classList.add('current')
+//     console.log('dot filled')
+ }
+ fillDot()
+
   return (
     <>
-            <h2>Projects</h2>
-            <p>Click the images or hover for more information. Stay tuned for future projects.</p>
-            <div className="center-projects">
+    <h2>Projects</h2>
+        <p>Click the images or hover for more information. Stay tuned for future projects.</p>
+        <div className="center-projects">
             <PrevButton handlePrev={handlePrev}/>
-        {card === 'Mixer' && (
-            <MixerCard />
-        )}
+            {card === 'Mixer' && (
+                <MixerCard />
+            )}
 
-        {card === 'BFH' && (
-            <BfhCard />
-        )}
+            {card === 'BFH' && (
+                <BfhCard />
+            )}
 
-        {card === 'URL' && (
-            <UrlShortener />
-        )}
+            {card === 'URL' && (
+                <UrlShortener />
+            )}
 
-        {card === 'Calc' && (
-            <Calculator />
-        )}
+            {card === 'Calc' && (
+                <Calculator />
+            )}
 
-        {card === 'Finca' && (
-            <Finca />
-        )}
+            {card === 'Finca' && (
+                <Finca />
+            )}
 
-        <NextButton handleNext={handleNext}/>
-            </div>
-        
-        
-        
-    
+            <NextButton handleNext={handleNext}/>
+        </div>
+
+        <div className="dots">
+            {cardArray.map((x, count) => (
+                <div className='dot' key={count} id={`d${count}`} onClick={() => handleDot(count)}>  </div>
+            ))}
+        </div>
     </>
   )
 }
