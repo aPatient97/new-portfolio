@@ -1,6 +1,7 @@
 import React from 'react'
 import VisitButton from '../VisitButton'
 
+
 function BfhCard() {
   return (
     <>
@@ -15,7 +16,7 @@ function BfhCard() {
           <p>A multiplayer quiz app where players can compete against each other in real time with the use of web-sockets and save their scores to the leaderboard. <br></br> This group project was made in 1 week using JavaScript, CSS, React, Redux, Netlify, Node/Express, PostgreSQL, Heroku, Socket.io.</p>
           <a href="https://big-fact-hunt.netlify.app/">
             <VisitButton />
-          </a>
+          </a>  
       </div>
     </section>
     </>

@@ -15,19 +15,10 @@
   }
 
   div.center-projects {
-    margin-top: 5em;
+    margin-top: 1em;
   }
 
-  svg.prev, svg.next {
-    margin-top: -15em;
 }
-
-}
-
-/* svg.prev, svg.next {
-  margin-top: -12em;
-} */
-
 
 /* .column {
   display: flex;
@@ -47,4 +38,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.dots {
+  display: flex; 
+ justify-content: center;
+}
+
+div.dot {
+  border-radius: 50%;
+  padding: 0.5em;
+  margin: 0.15em;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.current {
+  background: white;
 }
