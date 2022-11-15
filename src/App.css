@@ -67,7 +67,7 @@ button {
 
 section.container {
   position: relative;
-  width: 60vw;
+  width: 80vw;
   animation: slideInFromBottom 0.7s ease-out;
 }
 
