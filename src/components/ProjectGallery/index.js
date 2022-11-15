@@ -33,7 +33,7 @@ function ProjectGallery() {
 
    const removeDot = () => {
     dot && dot.classList.remove('current')
-    console.log('removed')
+    
    }
 
     const changeCard = () => {

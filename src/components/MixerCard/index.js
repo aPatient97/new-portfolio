@@ -6,11 +6,11 @@ function MixerCard() {
   return (
     <>     
           <section className="container">
-            <picture>
-              <source media="(min-width: 900px)" srcSet="/images/mixer-large.webp" alt="Mixer website screenshot"/>
-              <source media="(min-width: 900px)" className='image' src="./images/mixer-large.jpg" alt="Mixer website screenshot" />
-              <img className='image' src="./images/mixr.jpg" alt="Mixer website screenshot" />
-            </picture>
+            <picture >
+              <source loading='eager' media="(min-width: 900px)" srcSet="/images/mixer-large.webp" alt="Mixer website screenshot"/>
+              <source loading='eager' media="(min-width: 900px)" className='image' src="./images/mixer-large.jpg" alt="Mixer website screenshot" />
+              <img loading='eager' className='image' src="./images/mixr.jpg" alt="Mixer website screenshot" />
+            </picture>                
             <div className="middle">
               <h2 className="underline">Mixer</h2>
               <p>

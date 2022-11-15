@@ -5,11 +5,11 @@ function Calculator() {
   return (
     <>
      <section className="container">
-      <picture>
-        <source media="(min-width: 900px)" className='image' srcSet='/images/calculator-large.webp' />
-        <source media="(min-width: 900px)" className='image' srcSet='/images/calculator-large.jpg' />
-        <img className='image' src="images/calc.jpg" alt="javascript calculator website"/>
-      </picture>
+        <picture className='set-dimension'>
+          <source loading='eager' media="(min-width: 900px)" className='image' srcSet='/images/calculator-large.webp' />
+          <source loading='eager' media="(min-width: 900px)" className='image' srcSet='/images/calculator-large.jpg' />
+          <img loading='eager' className='image' src="images/calc.jpg" alt="javascript calculator website"/>
+        </picture>
       <div className="middle">
         <h2 className="underline">JS Calculator</h2>
         <p>A calculator made with vanilla Javascript and CSS.</p>

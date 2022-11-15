@@ -68,12 +68,12 @@ button {
 section.container {
   position: relative;
   width: 80vw;
-  animation: slideInFromBottom 0.7s ease-out;
+  animation: slideInFromBottom 0.7s;
 }
 
 img.image {
   width: 100%;
-  height: auto;
+  /* height: auto; */
   opacity: 1;
   object-fit: contain;
   transition: .5s ease;
@@ -85,7 +85,7 @@ img.image {
 
 img.big {
   width: 100%;
-  height: auto;
+  /* height: auto; */
   opacity: 1;
   object-fit: contain;
   transition: .5s ease;
