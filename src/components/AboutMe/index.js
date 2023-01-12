@@ -1,11 +1,20 @@
 import React from 'react'
 import './style.css'
 
-function AboutMe() {
+function AboutMe({setAbout, setWelcome}) {
+
+  const back = () => {
+    setWelcome(true)
+    setAbout(false)
+ }
+
   return (
     <>
     <div className="about">
+      <div className="project-head">
+        <h2 onClick={back} className='pointer left'>Back to home</h2>
         <h2>About Me</h2>
+      </div>
         <p> I love programming and get a huge kick out of problem solving. I like how coding combines logical thinking and creativity into one beautiful science. </p>
         <p> I am a May 2022 graduate of <a href='https://www.getfutureproof.co.uk/' id='fp'target='_blank' rel="noreferrer">Futureproof</a>; a three month intensive coding bootcamp. </p>
         <p> I am proficient in HTML, CSS, JavaScript, React, Node, Python, Flask & Django, SQL, MongoDB, Test Driven Development, Bootstrap, WordPress, command-line, GitHub and environment management.</p>

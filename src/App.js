@@ -12,21 +12,19 @@ function App() {
 const [visible, setVisible] = useState(false)
 const [welcome, setWelcome] = useState(true)
 const [about, setAbout] = useState(false)
-const [contact, setContact] = useState(false)
-
 
   return (
       <>
         <Header setWelcome={setWelcome} welcome={welcome} about={about} visible={visible} setVisible={setVisible} setAbout={setAbout} />
 
-        <SideNav setVisible={setVisible} visible={visible} setWelcome={setWelcome} welcome={welcome} setAbout={setAbout} about={about} contact={contact} setContact={setContact}/>
+        <SideNav setVisible={setVisible} visible={visible} setWelcome={setWelcome} welcome={welcome} setAbout={setAbout} about={about}/>
 
-        {welcome && <Welcome />}
-        {about && <AboutMe />}
+        {welcome && <Welcome setVisible={setVisible} setWelcome={setWelcome}/>}
+        {about && <AboutMe setAbout={setAbout} setWelcome={setWelcome} />}
         
         {visible && <div className="center">
                       <div className="project-gallery">
-                        <ProjectGallery />
+                        <ProjectGallery setWelcome={setWelcome} setVisible={setVisible} />
                       </div>                  
                     </div>}
       </>

@@ -1,8 +1,8 @@
 nav.side-nav {
-    background-color: #001c55;
+    background-color: #264653;
     position: fixed;
     height: 93vh;
-    width: 15vw;
+    width: 8vw;
     left: 0;
     bottom: 0;
     overflow-y: hidden;
@@ -16,20 +16,6 @@ nav.side-nav {
     z-index: 10;
 }
 
-@media only screen and (min-width: 760px) {
-    nav.side-nav {
-        height: 93vh;
-    }
-
-    header {
-        height: 7vh;
-    }
-
-    /* .burger {
-        height: 7vh;
-    } */
-}
-
 .hover-underline {
     display: inline-block;
     position: relative;
@@ -37,6 +23,7 @@ nav.side-nav {
 
 nav.side-nav p {
     cursor: pointer;
+    margin: 5em 0em;
 }
   
 @media only screen and (max-width: 760px) {
@@ -67,6 +54,15 @@ nav.side-nav p {
     transform: scaleY(0.9);
     transform-origin: bottom left;
     }
+
+    nav.side-nav {
+        height: 93vh;
+        width: 15vw;
+    }
+
+    header {
+        height: 7vh;
+    }
 }
 
 .hover-underline:after {
@@ -94,11 +90,7 @@ nav.side-nav p:hover {
 }
 
 nav.side-nav p#contact {
-    margin-bottom: 10em;
-}
-
-nav.side-nav #projects {
-    margin: 1em;
+    margin-bottom: 6em;
 }
 
 .nav-active {
@@ -112,3 +104,14 @@ a > p#contact {
 a > p#contact:hover {
     color: #00b4d8;
 }
+
+/* #contact-icons {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    width: 100%;
+    transition: all 1s ease;
+} */
+
+
+

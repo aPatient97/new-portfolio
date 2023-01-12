@@ -44,8 +44,6 @@
   right: 50%;
 }
 
-
-
 div.dot {
   border-radius: 50%;
   padding: 0.5em;
@@ -60,4 +58,22 @@ div.dot {
 
 .margin {
   margin-left: 1em;
+}
+
+.project-head {
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 450px) {
+  .project-head {
+    justify-content: flex-end;
+  }
+}
+
+.left {
+ position: absolute;
+ left: 0;
+ padding-left: 1em;
+ 
 }

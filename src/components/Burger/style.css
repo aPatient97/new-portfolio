@@ -1,5 +1,5 @@
 .burger div{
-    background-color: white;
+    background-color: #00b4d8;
     width: 25px;
     height: 3px;
     margin: 5px;
@@ -13,7 +13,7 @@
 }
 
 .burger:hover div {
-    background-color: #00b4d8;
+    background-color: #264653;
     transform: rotate(180deg);
 }
 

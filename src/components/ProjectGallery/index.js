@@ -9,7 +9,7 @@ import UrlShortener from '../UrlShortener'
 import './style.css'
 
 
-function ProjectGallery() {
+function ProjectGallery({setVisible, setWelcome}) {
     const cardArray = ['Mixer', 'BFH', 'URL', 'Calc', 'Finca']
     const [count, setCount] = useState(0)
     const [card, setCard] = useState(cardArray[count])
@@ -79,10 +79,18 @@ function ProjectGallery() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
  }, [])
  
+ const back = () => {
+    setWelcome(true)
+    setVisible(false)
+ }
+
   return (
     
     <>
-    <h2>Projects</h2>
+    <div className="project-head">
+        <h2 onClick={back} className='pointer left'>Back to home</h2>
+        <h2>Projects</h2>
+    </div>
         <p className='margin'>Click the images or hover for more information. Stay tuned for future projects.</p>
         
         <div className="center-projects">

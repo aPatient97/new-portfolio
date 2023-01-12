@@ -3,14 +3,11 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1em;
-    background-color: #000;
-    background-color: #28282B;
-    background-color: #005f73;
-    background-color: #0a9396;
-    background-color: #001c55;
+    background-color: #e9c46a;
     position: sticky;
     top: 0;
     height: 7vh;
+    width: 100%;
   }
   
   #name-head {

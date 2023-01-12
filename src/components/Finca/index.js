@@ -12,7 +12,7 @@ function Finca() {
           <img  loading='eager' className='image'src="images/finca.jpg" alt="rojo rubi finca website" />
         </picture>
         <div className="middle">
-          <h2 className="underline">Rojo Rubi Finca</h2>
+          <h2 className="underline">Finca Rojo Rubi</h2>
           <p>A property website made with vanilla Javascript and CSS.</p>
           <a href="https://affectionate-haibt-87a930.netlify.app/">
             <VisitButton />
