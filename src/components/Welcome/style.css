@@ -298,3 +298,12 @@ div.bottom:hover + div.bottom-p {
     100% {transform: translateY(-10%)}
     
 }
+
+@media only screen and (min-width: 760px) and (max-width: 1200px ) {
+    div#welcome h1 {
+        font-size: 6em;
+    }
+    div.home-ps {
+        padding: 1em;
+    }
+}
