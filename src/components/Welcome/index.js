@@ -46,7 +46,7 @@ function Welcome({setVisible, setWelcome}) {
           <div className="home-ps">
             <p>Hello world, I am</p>
             <h1>Alex Patient</h1>
-            <p>I'm a performance minded full-stack developer based in London.<br></br>
+            <p>I'm a performance minded full-stack developer based in London.
             I enjoy designing & writing clean code using minimal libraries.<br></br>
             I have worked as a chef for 7 years and I am now looking for junior front-end developer roles, either working remotely or located in London.<br></br>
             My technical skills include HTML, CSS, JavaScript, React, Python, Flask & Django, NodeJS, SQL, MongoDB, Unit Testing with Jest, Github and Docker</p>
@@ -58,21 +58,21 @@ function Welcome({setVisible, setWelcome}) {
               <CvButton />
               <button className='hire-me' onClick={handleClick}>Projects</button>
             </div>
-
+            <a href="#anchor" id='scroll'>
+              <svg fill="#000000" width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+              <title>chevron-down</title>
+              <path d="M26.531 10.47c-0.136-0.136-0.324-0.22-0.531-0.22s-0.395 0.084-0.531 0.22v0l-9.469 9.469-9.47-9.469c-0.135-0.131-0.319-0.212-0.523-0.212-0.414 0-0.75 0.336-0.75 0.75 0 0.203 0.081 0.388 0.213 0.523l10 10.001c0.136 0.135 0.323 0.219 0.53 0.219s0.394-0.084 0.53-0.219l10.001-10.001c0.135-0.136 0.218-0.323 0.218-0.53s-0.083-0.394-0.218-0.53l0 0z"></path>
+              </svg>
+              <p>Scroll down or click for more</p>
+            </a>
           </div>
-           
-        <div id='scroll'>
-          <svg fill="#000000" width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
-          <title>chevron-down</title>
-          <path d="M26.531 10.47c-0.136-0.136-0.324-0.22-0.531-0.22s-0.395 0.084-0.531 0.22v0l-9.469 9.469-9.47-9.469c-0.135-0.131-0.319-0.212-0.523-0.212-0.414 0-0.75 0.336-0.75 0.75 0 0.203 0.081 0.388 0.213 0.523l10 10.001c0.136 0.135 0.323 0.219 0.53 0.219s0.394-0.084 0.53-0.219l10.001-10.001c0.135-0.136 0.218-0.323 0.218-0.53s-0.083-0.394-0.218-0.53l0 0z"></path>
-          </svg>
-          <p>Scroll down for more</p>
-        </div>
+            
+            
         </div>
       </div>
      
         <div className="parallax-container">
-          <p className='padding'>You can view all my projects on the projects page but here are my favourites:</p>
+          <p className='padding' id='anchor'>You can view all my projects on the projects page but here are my favourites:</p>
           <div className="project-grid">
 
             <div className="grid-item top">

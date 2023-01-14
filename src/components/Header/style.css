@@ -3,7 +3,11 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1em;
-    background-color: #e9c46a;
+    /* background-color: #e9c46a; */
+    /* background-color: #FEE440;
+    background-color: #00bbf9; */
+    /* background-color: #BD4089; */
+    background-color: #4cc9f0;;
     position: sticky;
     top: 0;
     height: 7vh;
@@ -22,7 +26,7 @@ header {
       color: #fff;
     }
     50% {
-      color: #00b4d8;
+      color: #A29F15;
     }
 
     100% {

@@ -1,7 +1,7 @@
 import React from 'react'
 import './style.css'
 
-function SideNav({setVisible, visible, setWelcome, welcome, setAbout, about, contact, setContact}) {
+function SideNav({setVisible, visible, setWelcome, welcome, setAbout, about}) {
 
   const hideNav = () => {
     const nav = document.querySelector('.side-nav')
@@ -25,31 +25,14 @@ function SideNav({setVisible, visible, setWelcome, welcome, setAbout, about, con
 
   }
 
-  const handleContact = () => {
-    const email = document.querySelector('#nav-gmail')
-    const linkedIn = document.querySelector('#nav-linked-in')
-    const github = document.querySelector('#nav-github')
-    email.classList.toggle('animate-gmail')
-    linkedIn.classList.toggle('animate-linked-in')
-    github.classList.toggle('animate-github')
-  }
-
-  const showSvg = () => {
-    // const svgs = document.querySelector('.contact-drop')
-    // svgs.classList.add('move')
-    console.log('moved')
-  }
-
-  
-
   return (
 <>
       <nav className="side-nav">
           <p id="projects" className='hover-underline' onClick={handleClick}>Projects</p>
           <p id="about-me" className='hover-underline' onClick={handleAbout} >About Me</p>
-          <a href="mailto:apatient97@gmail.com">
-          <p id="contact" className='hover-underline' onClick={handleContact} onMouseOver={showSvg}>Contact</p>
-          </a>         
+         
+          <p id="contact" className='hover-underline'><a href="mailto:apatient97@gmail.com">Contact</a></p>
+          
       </nav>
 </>
   )

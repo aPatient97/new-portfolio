@@ -2,7 +2,7 @@
     display: flex; 
     justify-content: space-evenly;
     align-items: center; 
-    width: 15%;
+    width: 20%;
 }
 
 @media screen and (max-width: 760px) {
@@ -15,27 +15,27 @@
     cursor: pointer;
 }
 
-.icons svg:hover {
-    fill: whitesmoke;  
-    transform: scale(1.2);
-}
-
-.icons svg#linked-in:hover {
-    fill: #00b4d8 !important;
-}
-
-/* .icons svg#gmail {
-    fill: white !important;
-} */
-
 #cv {
-    color: #264653;
+    color: #F28482;  
+    color: #A29F15;
     text-decoration: none;
     font-weight: 800;
     font-size: 1.5em;
     padding-bottom: 0.1em;}
 
 #cv:hover {
-    color:#00b4d8;
+    color: #F7F3E3;
     transform: scale(1.2)
+}
+
+.icons svg {
+    fill: #9B5DE5;
+    fill: #e9c46a;
+    fill: #F28482;
+    fill: #A29F15;
+   
+}
+
+.icons svg:hover {
+    fill: #F7F3E3;
 }
