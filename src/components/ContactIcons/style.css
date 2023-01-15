@@ -17,7 +17,6 @@
 
 #cv {
     color: #F28482;  
-    color: #A29F15;
     text-decoration: none;
     font-weight: 800;
     font-size: 1.5em;
@@ -29,10 +28,7 @@
 }
 
 .icons svg {
-    fill: #9B5DE5;
-    fill: #e9c46a;
-    fill: #F28482;
-    fill: #A29F15;
+    fill: #F28482; 
    
 }
 

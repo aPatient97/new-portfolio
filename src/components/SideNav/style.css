@@ -26,7 +26,7 @@ nav.side-nav p {
     margin: 5em 0em;
 }
   
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 600px) {
     nav.side-nav p {
         writing-mode: vertical-lr;
         transform: rotate(180deg);
@@ -101,13 +101,9 @@ p#contact > a:hover {
     font-weight: 600;
 }
 
-/* #contact-icons {
-    display: flex;
-    flex-direction: column;
-    list-style-type: none;
-    width: 100%;
-    transition: all 1s ease;
-} */
-
-
+@media only screen and (max-width: 1050px) and (min-width: 600px) {
+    nav.side-nav {
+        width: 10vw;
+    }
+}
 
