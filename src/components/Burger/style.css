@@ -1,5 +1,6 @@
 .burger div{
     background-color: #F28482;
+    background-color: #118AB2;
     width: 25px;
     height: 3px;
     margin: 5px;
@@ -17,9 +18,9 @@
     transform: rotate(180deg);
 }
 
-.burger:hover + #name-head {
+/* .burger:hover + #name-head {
     color: #00b4d8;
-}
+} */
 
 
 .toggle #line1 {
